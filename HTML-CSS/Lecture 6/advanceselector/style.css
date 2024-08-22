@@ -1,0 +1,62 @@
+/* Desendent Selector */
+
+div p{
+    color :blueviolet;
+
+}
+
+header a{
+    color : pink;
+}
+
+
+#para + p{
+    color :blue;
+}
+
+
+/* Child Selector */
+
+ul > li{
+    color : cyan;
+}
+
+
+/* Immediate Siblings
+#state + li{
+    color : chartreuse;
+}
+
+
+li + li{
+    color : brown;
+} */
+
+
+/* General Siblings
+
+#state ~ li{
+    color : mediumvioletred;
+}
+
+*/
+
+/* Pseudo Class */
+
+a:link{
+    color :aqua;
+}
+
+a:visited{
+    color :green;
+
+}
+
+a:hover{
+    color :crimson;
+}
+
+a:active{
+    color :gold;
+
+}

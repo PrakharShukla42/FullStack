@@ -1,0 +1,29 @@
+*{
+    /* margin : 20px; */
+    margin :auto;
+}
+.container{
+    border : 2px solid red;
+    height : 100px;
+    width: 1000px;
+    overflow: auto;
+    padding: 30px;
+
+    /* padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px; */
+
+    /* padding: 30px 20px 50px 10px; */
+
+}
+
+.container1{
+    border : 2px dashed yellowgreen;
+    height : 100px;
+    width: 1000px;
+    margin : auto;
+    margin-top: 20px;
+    overflow: auto;
+    padding: 30px;
+}
