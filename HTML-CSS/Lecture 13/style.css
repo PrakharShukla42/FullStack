@@ -1,0 +1,60 @@
+.container{
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    position: absolute;
+    /* animation: anime; */
+    animation-name: changePos;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    /* animation-iteration-count: 2; */
+    /* animation-fill-mode: forwards; */
+    animation-direction: alternate; 
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes changePos {
+    0%{
+        top: 0;
+        left: 0;
+        background-color: aqua;
+    }   
+    25%{
+        top: 0;
+        left: 500px;
+        background-color: aquamarine;
+        border-radius: 50%;
+    }   
+    50%{
+        top: 500px;
+        left: 500px;
+        background-color: brown;
+        border-radius: 0%;
+
+    }
+    75%{
+        top: 500px;
+        left: 0;
+        background-color: greenyellow;
+        border-radius: 50%;
+    }  
+    100%{
+        top: 0;
+        left: 0;
+        background-color: goldenrod;
+    }
+}
+
+
+@keyframes anime {
+    /* from{
+        top: 0;
+        left: 0;
+    }    
+    to{
+        top: 0;
+        left: 500px;
+    } */
+
+}
