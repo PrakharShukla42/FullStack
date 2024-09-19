@@ -1,0 +1,70 @@
+body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f0f4f8;  
+    margin: 0;  
+    padding: 0;  
+}  
+
+.container {  
+    max-width: 1200px;  
+    margin: auto;  
+    padding: 20px;  
+}  
+
+header {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    background-color: #007bff;  
+    color: white;  
+    padding: 20px;  
+}  
+
+h1 {  
+    margin: 0;  
+}  
+
+.register-btn {  
+    background-color: #28a745;  
+    color: white;  
+    border: none;  
+    padding: 10px 20px;  
+    cursor: pointer;  
+}  
+
+.timeline {  
+    display: flex;  
+    flex-direction: column;  
+    margin: 20px 0;  
+}  
+
+.event {  
+    background-color: white;  
+    border: 1px solid #007bff;  
+    border-radius: 5px;  
+    padding: 10px;  
+    margin: 5px 0;  
+}  
+
+.details, .prizes, .stats, .qr-section {  
+    background-color: white;  
+    border-radius: 5px;  
+    padding: 20px;  
+    margin: 20px 0;  
+}  
+
+.prizes, .stats {  
+    display: flex;  
+    justify-content: space-between;  
+}  
+
+.prize, .stat {  
+    flex: 1;  
+    text-align: center;  
+    padding: 10px;  
+}  
+
+.qr-section img {  
+    width: 150px;  
+    height: 150px;  
+}

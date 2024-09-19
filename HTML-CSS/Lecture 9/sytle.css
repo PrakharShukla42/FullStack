@@ -93,3 +93,116 @@ a{
 .pricing-section{
     margin: auto;
 }
+/* General Page Styling */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+p {
+    color: #777;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.w3-row-padding {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.w3-third {
+    width: 30%;
+    margin: 0 1.66%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.w3-third:hover {
+    transform: translateY(-10px);
+}
+
+.w3-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.w3-ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.w3-ul li.w3-theme {
+    background-color: #009688;
+    color: white;
+}
+
+.w3-ul li.w3-theme-l2 {
+    background-color: #00bfa5;
+    color: white;
+}
+
+.w3-ul li.w3-theme-l5 {
+    background-color: #f1f1f1;
+}
+
+.w3-padding-16 {
+    padding: 20px 0;
+    font-size: 1.2em;
+}
+
+.w3-wide {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.w3-opacity {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.w3-hover-shadow:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.w3-button {
+    background-color: #009688;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.w3-button:hover {
+    background-color: #00796b;
+}
+
+@media screen and (max-width: 992px) {
+    .w3-third {
+        width: 45%;
+        margin: 20px 2.5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .w3-third {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+}
