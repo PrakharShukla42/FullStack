@@ -1,108 +1,206 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.container{
-     height: 100vh;
-     background-image: url(./Space.png);
-     /* background-size: cover; */
-     background-color: skyblue;
-     animation-name: bgMove;
-     animation-duration: 6s;
-     animation-fill-mode: forwards;
+
+/* body{
+    /* background-image: url('./Space.png'); 
+    animation-name: bbgMove;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+} */
+
+
+
+/* @keyframes bbgMove {
+    100% {
+        background-position: -2000px 0;
+    }
+} */
+
+.container {
+    height: 100vh;
+    /* border: 2px solid black; */
+    background-image: url('./Space.png');
+    /* background-color: aqua; */
+    background-color: skyblue;
+    background-size: cover;
+    animation-name: bgMove;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
 }
 
-@keyframes bgMove{
-    100%{
-        background-position: -30000px 0;
+@keyframes bgMove {
+    100% {
+        background-position: -10000px 0;
     }
 }
 
-
-.rocket{
-    /* border: 2px solid green; */
+.rocket {
     height: 200px;
     width: 200px;
+    /* border: 2px solid red; */
     transform: rotate(45deg);
     position: absolute;
-    bottom: 150px;
-    left: 300px;
-
-    /* animation-name: rocketMove;
-    animation-duration: 2s;
+    top: 40%;
+    left: 30%;
+    animation: rocket 2s 3 linear, rotate 1s 9s forwards, launch 1s 10s forwards;
+    /* animation-duration: 2s;
     animation-iteration-count: 3;
     animation-timing-function: linear; */
 
-    animation: rocketMove 2s linear 3,
-                rotaterocket 1s ease-in-out 10s forwards ,
-                rocketlaunch 1.5s ease-in 11.5s forwards;
-}
-
-.rocket img{
-    width: 100%;
-}
-
-@keyframes rocketMove{
-    /* 0%{
-        bottom: 150px;
-    } */
-    25%{
-        bottom: 200px;
-    }
-    /* 50%{
-        bottom: 150px;
-    } */
-    75%{
-        bottom: 100px;
-    }
-    100%{
-        bottom: 150px;
-    }
 
 }
 
-@keyframes rotaterocket{
+@keyframes rocket {
+
+    25% {
+        top: 30%;
+    }
+
+    50% {
+        top: 40%;
+    }
+
+    75% {
+        top: 50%;
+    }
+
+    100% {
+        top: 40%;
+
+    }
+
+
+}
+
+@keyframes rotate{
     100%{
         transform: rotate(-45deg);
+
     }
 }
 
-@keyframes rocketlaunch{
+@keyframes launch{
     100%{
-        bottom: 150vh;
+        top:-30%;
     }
 }
 
-.cody{
+.rocket img {
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.cody {
     height: 200px;
     width: 200px;
-    /* border: 5px solid red; */
-    position: absolute;
-    bottom: 150px;
-    left: -1100px;
-    /* animation-name: codyMove;
-    animation-duration: 8s;
-    animation-fill-mode: forwards; */
-
-    animation: codyMove 8s forwards,
-                codyinrocket 1s ease-out 8.5s forwards;
-
+    /* border: 2px solid red; */
+    position: relative;
+    top: 40%;
+    left: -20%;
+    animation: cody 3s ease-in 6s;
+    /* animation-delay: 6s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+     */
 }
 
-.cody img{
-    /* width: 100%; */
-    height: 100%;
-}
+@keyframes cody {
 
-@keyframes codyMove{
-    100%{
-        left: 200px;
+
+    0%{
+        left: -20%;
+    }   
+    50%{
+        left: 35%;
     }
+    
+    100%{
+        left: 35%;
+        transform: scale(0.05);
+    }   
+
 }
 
-@keyframes codyinrocket{
-    100%{
-        left: 340px;
-        transform: scale(0);
+
+
+.cody img {
+    /* height: 100%; */
+    width: 100%;
+
+}
+
+
+
+@media (max-width:300px) {
+    
+
+    .rocket {
+        height: 70px;
+    width: 70px;
+        /* border: 2px solid red; */
+        top: 40%;
+        left: 20%;
+        animation: rocket 2s 3 linear, rotate 1s 9s forwards, launch 1s 10s forwards;
+        /* animation-duration: 2s;
+        animation-iteration-count: 3;
+        animation-timing-function: linear; */
+    
+    
     }
+    
+
+
+    
+.cody {
+    height: 70px;
+    width: 70px;
+    left: -30%;
+    animation: cody 3s ease-in 6s;
+    /* animation-delay: 6s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+     */
+}
+
+
+}
+
+
+
+@media  (min-width:301px) and (max-width:600px){
+    
+
+    .rocket {
+        height: 120px;
+    width: 120px;
+        /* border: 2px solid red; */
+        top: 40%;
+        left: 20%;
+        animation: rocket 2s 3 linear, rotate 1s 9s forwards, launch 1s 10s forwards;
+        /* animation-duration: 2s;
+        animation-iteration-count: 3;
+        animation-timing-function: linear; */
+    
+    
+    }
+    
+
+
+    
+.cody {
+    height: 120px;
+    width: 120px;
+    left: -30%;
+    animation: cody 3s ease-in 6s;
+    /* animation-delay: 6s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+     */
+}
+
+
 }

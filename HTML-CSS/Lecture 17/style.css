@@ -1,0 +1,28 @@
+.child{
+    border: 2px solid black;
+    text-align: center;
+    display: none;
+}
+
+@media (max-width:300px){
+    .child1{
+        display: block;
+    }
+}
+
+@media (min-width:301px) and (max-width:600px){
+    .child2{
+        display: block;
+    }
+}
+
+@media (min-width:601px) and (max-width:900px){
+    .child3{
+        display: block;
+    }
+}
+@media (min-width:901px){
+    .child4{
+        display: block;
+    }
+}
