@@ -29,3 +29,37 @@ img.setAttribute('src','https://tse2.mm.bing.net/th?id=OIP.9EfdRThsp25nAVRZHA5O2
 // GET ATTRIBUTE
 var x = img.getAttribute('src');
 console.log(x);
+
+
+const h1 = document.querySelector('h1')
+// h1.setAttribute('class','one')
+// h1.setAttribute('class','two')
+
+// h1.classList.remove('two');
+
+// Toggle 
+h1.classList.toggle('one')
+h1.classList.toggle('one')
+h1.classList.toggle('one')
+h1.classList.toggle('two')
+
+// Inner Element of Heading
+h1.innerText='Kuch bhi ho rha hai bhai'
+
+
+// Ordered List
+const li = document.querySelectorAll('li')[2];
+li.style.border='2px solid green'
+
+// Previous Element
+li.previousElementSibling.style.color='blue'
+
+// Next Element
+li.nextElementSibling.style.color='orange'
+
+//Parent Element
+li.parentElement.style.border='2px solid black'
+
+//Child element
+const parent = li.parentElement;
+parent.style.background='lightblue'
