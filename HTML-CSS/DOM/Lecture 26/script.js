@@ -63,3 +63,11 @@ li.parentElement.style.border='2px solid black'
 //Child element
 const parent = li.parentElement;
 parent.style.background='lightblue'
+
+
+// Create an Element
+const element = document.createElement('p');
+element.innerText='Hello'
+element.textContent = 'This is a new paragraph';
+document.body.appendChild(element);
+console.log(element);
