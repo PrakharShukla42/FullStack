@@ -9,6 +9,7 @@ const body = document.querySelector('body')
 body.style.backgroundColor = 'lightblue'
 console.log(para)
 
+
 // Create an ordered list
 const ol = document.createElement('ol');
 
@@ -23,5 +24,5 @@ items.forEach(itemText => {
 const cont = document.querySelector('.container');
 cont.appendChild(ol);
 
-// Log the ordered list to the console
+
 console.log(ol);
